@@ -41,4 +41,8 @@ setInterval(() => {
 
 server.listen(port, () => {
   console.log(`Server running on http://localhost:${port}/`);
+
+  for(var i = 0; i < 40000; i++) {
+    console.log('spam test message ' + i);
+  }
 });
